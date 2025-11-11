@@ -97,7 +97,7 @@ function setupLoginForm() {
             
             // Simulasi login berhasil
             // Di aplikasi nyata, ini akan memeriksa ke backend
-            if (email === 'admin@uniga.id' && password === 'admin123') {
+            if (email === 'admin@astra.id' && password === 'admin123') {
                 window.location.href = 'dashboard.html';
             } else {
                 alert('Email/password yang anda masukkan salah');

@@ -150,8 +150,8 @@ body {
     padding: 1rem 2rem;
     background: linear-gradient(
         to bottom right,
-        #F4E06D 0%,
-        #7d7d46 40%,
+        #0077ff 0%,
+        #00d9ff 40%,
         #333333 100%
     );
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -199,8 +199,8 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-    background-color: #F4E06D; /* Kuning Emas Muda dari Header */
-    color: #212529; /* Warna teks yang sedikit lebih gelap dari hitam murni untuk keterbacaan */
+    background-color: #0C2B4E;
+    color: #ffffff;
 }
 
 .dropdown {
@@ -248,6 +248,13 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {

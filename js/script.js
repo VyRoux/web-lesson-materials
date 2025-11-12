@@ -190,8 +190,8 @@ function setupTracking() {
                 resultDiv.innerHTML = `
                     <div class="tracking-details">
                         <h3>Detail Pengiriman</h3>
-                        <p><strong>Nomor DO:</strong> ${pengiriman.noDO}</p>
-                        <p><strong>Nama Mahasiswa:</strong> ${pengiriman.namaMahasiswa}</p>
+                        <p><strong>Nomor Kurir:</strong> ${pengiriman.noDO}</p>
+                        <p><strong>Nama Kurir:</strong> ${pengiriman.namaMahasiswa}</p>
                         <p><strong>Status:</strong> <span class="status-badge ${statusClass}">${pengiriman.status}</span></p>
                         
                         <div class="progress-bar">

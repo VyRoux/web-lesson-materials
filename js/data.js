@@ -1,32 +1,32 @@
 // Data dummy untuk bahan ajar
 const dataBahanAjar = [
     {
-        kode: "BA001",
-        nama: "Buku Matematika Dasar",
+        kode: "BM001",
+        nama: "Buku HTML Dasar",
         stok: 150,
         status: "Tersedia"
     },
     {
-        kode: "BA002",
-        nama: "Buku Fisika Modern",
+        kode: "BM002",
+        nama: "Buku CSS Dasar",
         stok: 75,
         status: "Tersedia"
     },
     {
-        kode: "BA003",
-        nama: "Buku Kimia Organik",
+        kode: "BM003",
+        nama: "Buku JavaScript Pemula",
         stok: 50,
         status: "Terbatas"
     },
     {
-        kode: "BA004",
-        nama: "Buku Biologi Molekuler",
+        kode: "BM004",
+        nama: "Buku PHP untuk Pemula",
         stok: 0,
         status: "Habis"
     },
     {
-        kode: "BA005",
-        nama: "Buku Sejarah Indonesia",
+        kode: "BM005",
+        nama: "Buku Framework",
         stok: 200,
         status: "Tersedia"
     }
@@ -35,33 +35,33 @@ const dataBahanAjar = [
 // Data dummy untuk tracking pengiriman
 const dataPengiriman = [
     {
-        noDO: "DO2023001",
+        noDO: "NK2023001",
         namaMahasiswa: "Ahmad Fauzi",
         status: "Dikirim",
         progress: 75,
-        ekspedisi: "JNE Express",
+        ekspedisi: "Jupiter",
         tanggalKirim: "2023-10-15",
-        jenisPaket: "Reguler",
+        jenisPaket: "Buku HTML Dasar",
         totalPembayaran: 125000
     },
     {
-        noDO: "DO2023002",
-        namaMahasiswa: "Siti Rahayu",
+        noDO: "NK2023002",
+        namaMahasiswa: "Jamal Kurniawan",
         status: "Diproses",
         progress: 30,
-        ekspedisi: "Tiki",
+        ekspedisi: "Sweden",
         tanggalKirim: "2023-10-20",
-        jenisPaket: "Cepat",
+        jenisPaket: "Buku CSS Dasar",
         totalPembayaran: 185000
     },
     {
-        noDO: "DO2023003",
-        namaMahasiswa: "Budi Santoso",
+        noDO: "NK2023003",
+        namaMahasiswa: "Asep Supriatna",
         status: "Selesai",
         progress: 100,
-        ekspedisi: "Pos Indonesia",
+        ekspedisi: "Turkey",
         tanggalKirim: "2023-10-05",
-        jenisPaket: "Reguler",
+        jenisPaket: "Buku JavaScript Pemula",
         totalPembayaran: 95000
     }
 ];

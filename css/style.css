@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Poppin;
-    src: url('assets/Poppins/Poppins-Regular.ttf')');
+    font-family: Poppins;
+    src: url('assets/Poppins/Poppins-SemiBold.ttf') format('truetype');
 }
 
 /* Reset dan Base Styles */
@@ -11,10 +11,11 @@
 }
 
 body {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Orbitron', Poppins,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
+    overflow: auto;
 }
 
 /* Login Styles */
@@ -149,14 +150,21 @@ body {
     align-items: center;
     padding: 1rem 2rem;
     background: linear-gradient(
-        to bottom right,
-        #0077ff 0%,
-        #00d9ff 40%,
-        #333333 100%
-    );
+    135deg,
+    #ffa600,
+    #ffed7a,
+    #333333
+);
+    background-size: 200% 200%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: shining 20s ease-in-out infinite;
 }
 
+@keyframes shining {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
 
 .header-left {
     display: flex;
@@ -253,8 +261,9 @@ body {
 
 .card:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.08);
+    transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 .card h3 {
@@ -267,7 +276,7 @@ body {
     color: #666;
 }
 
-/* Tracking Styles */
+/* ----------------------------- Tracking Style ----------------------------- */
 .tracking-main, .stok-main {
     background: white;
     padding: 2rem;
@@ -481,4 +490,62 @@ body {
 .action-buttons {
     display: flex;
     gap: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    body {
+        overflow: auto;
+    }
+
+    #greeting {
+        display: none;
+    }
+
+    #logoutBtn {
+        margin-left: auto;
+    }
+
+    .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-left h1 {
+        font-size: 1.25rem;
+    }
+
+    .header-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .dashboard-nav ul {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .stock-table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow-x: auto;
+        display: block;
+    }
 }
